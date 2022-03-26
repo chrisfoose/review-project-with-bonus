@@ -21,7 +21,6 @@ for (let i = 0; i < pass.length; i++) {
     };
 
     document.getElementById("password").value = 'pass';
-    return pass;
 };
 
 function copyPassword() {
