@@ -21,7 +21,11 @@ for (let i = 0; i < 18; i++) {
   
     };
 
-return passArr;    //document.getElementById("password").value = 'pass';
+
+//let joinPassArr = passArr.join(' ');
+return passArr.join('');    
+
+//document.getElementById("password").value = 'pass';
     
 };
 
