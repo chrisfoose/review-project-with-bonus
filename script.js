@@ -10,20 +10,33 @@ let passArr = [];
 
 // create a global variable called "pwLength" with a number between 10 and 18
 
-const pwLength = 50;
+let pwLength = 18;
 
 // Using the above array and password length variable, create a random password using a for loop inside of a function called "addNewPassword" either saved as an arrow function variable or a traditional function
 
+//function to get character length
+
+  function charLength(numLength) {
+    numLength = prompt('Please enter a value under 50 characters.', 49);
+        if (numLength < 50) {
+            console.log(numLength);
+            pwLength = numLength;
+            return numLength;    
+        } else if (numLength > 50) {
+            alert('Please enter a value under 50');
+        };
+};
+charLength(); 
+
 function addNewPassword() {
-for (let i = 0; i < 18; i++) {
+for (let i = 0; i < pwLength; i++) {
      pass = chars[Math.floor(Math.random() * chars.length)];
      passArr.push(pass);
-  
-    };
-
-
+     
+}
+return passArr.join(''); 
 //let joinPassArr = passArr.join(' ');
-return passArr.join('');    
+   
 
 //document.getElementById("password").value = 'pass';
     
