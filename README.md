@@ -1,3 +1,9 @@
+This is a password generator that includes alpha numerical characters as well as symbols.  
+
+I included the bonus features as well.
+
+
+--
 # Instructions
 1. Please re-style the css to make it your own WITHOUT changing the HTML page
 2. Please go to the script.js file and read and follow the commented instructions
